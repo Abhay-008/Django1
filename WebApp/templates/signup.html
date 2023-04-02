@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+<div style="height: 100vh;">
+
+     <form method="POST">
+     {% csrf_token %}
+     {{form}}   
+
+
+
+
+
+</div>
+
+<div>
+  <input type="submit">
+</div>  
+
+{% include 'footer.html' %}
+
+</form>

@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+<div style="height: 100vh;">
+
+<table border="1" cellpadding="10" style="margin-left: 20px;">
+    {% if data %}
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+    </tr>
+   
+
+    {% for i in data %}
+
+
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.sal}}</td>
+    </tr>
+
+
+    {% endfor %}
+    {% else %}
+
+
+        <p>Data is not available</p>
+    
+    {% endif %}    
+
+
+
+
+</table>
+
+
+</div>
+
+{% include 'footer.html' %}
